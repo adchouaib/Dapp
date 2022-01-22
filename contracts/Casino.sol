@@ -1,4 +1,4 @@
-pragma solidity 0.4.20;
+pragma solidity ^0.4.11;
 
 contract Casino{
     address public owner;
