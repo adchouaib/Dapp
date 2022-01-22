@@ -66,4 +66,7 @@ contract Casino{
             winners[j].transfer(winnerEtherAmount);
         }
     }
+
+    function() public payable {}
+
 }
