@@ -14,10 +14,10 @@ module.exports = {
                 include: /src/
             },
             {
-                test: /\.jsx?$/,
-                laoder: 'babel-loader',
+                test: /\.js$/,
+                loader: 'babel-loader',
                 exclude: /node_modules/,
-                query:{
+                options:{
                     presets: ['es2015', 'react', 'stage-2']
                 }
             }

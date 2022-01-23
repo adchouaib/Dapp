@@ -1,0 +1,2825 @@
+{
+  "contractName": "Casino",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "generateNumberWinner",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "numberOfBets",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "player",
+          "type": "address"
+        }
+      ],
+      "name": "checkPlayerExists",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "kill",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "playerInfo",
+      "outputs": [
+        {
+          "name": "amountBet",
+          "type": "uint256"
+        },
+        {
+          "name": "numberSelected",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "numberWinner",
+          "type": "uint256"
+        }
+      ],
+      "name": "distributePrizes",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "numberSelected",
+          "type": "uint256"
+        }
+      ],
+      "name": "bet",
+      "outputs": [],
+      "payable": true,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "minimumBet",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "maxAmountOfBets",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "players",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalBet",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_minimumBet",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "payable": true,
+      "type": "fallback"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.4.11+commit.68ef5810\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[],\"name\":\"generateNumberWinner\",\"outputs\":[],\"payable\":false,\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"numberOfBets\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"player\",\"type\":\"address\"}],\"name\":\"checkPlayerExists\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"kill\",\"outputs\":[],\"payable\":false,\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"address\"}],\"name\":\"playerInfo\",\"outputs\":[{\"name\":\"amountBet\",\"type\":\"uint256\"},{\"name\":\"numberSelected\",\"type\":\"uint256\"}],\"payable\":false,\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"numberWinner\",\"type\":\"uint256\"}],\"name\":\"distributePrizes\",\"outputs\":[],\"payable\":false,\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"numberSelected\",\"type\":\"uint256\"}],\"name\":\"bet\",\"outputs\":[],\"payable\":true,\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"minimumBet\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"maxAmountOfBets\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"players\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalBet\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"type\":\"function\"},{\"inputs\":[{\"name\":\"_minimumBet\",\"type\":\"uint256\"}],\"payable\":false,\"type\":\"constructor\"},{\"payable\":true,\"type\":\"fallback\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Casino.sol\":\"Casino\"},\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Casino.sol\":{\"keccak256\":\"0x500977df38d3eca5de4312c6cc42a5e9a96a50c3470fadc93b32614ddcdb5e01\",\"urls\":[\"bzzr://2b4149429af668858d97a268242b63c35d70bea4201fa4827c76b3ca84a4460c\"]},\"project:/contracts/Migrations.sol\":{\"keccak256\":\"0xab29b9718500c7548b626e55b443963adb6f3c570e41e2f66e517df53072493c\",\"urls\":[\"bzzr://b0199d3ca479b440b0572e8d40269e2da81aad5227101b33fc8a6e48fbf0ffb5\"]}},\"version\":1}",
+  "bytecode": "0x60606040526064600455341561001157fe5b604051602080610a34833981016040528080519060200190919050505b33600060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060008114151561008157806001819055505b5b505b6109a1806100936000396000f300606060405236156100b8576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630a50e361146100c15780632ca8c6d3146100d35780634081d916146100f957806341c0e1b5146101475780634b114691146101595780636ca3fc3b146101aa5780637365870b146101ca5780638da5cb5b146101e2578063c38a8afd14610234578063e08a96cd1461025a578063f71d96cb14610280578063fe5e1853146102e0575b6100bf5b5b565b005b34156100c957fe5b6100d1610306565b005b34156100db57fe5b6100e3610327565b6040518082815260200191505060405180910390f35b341561010157fe5b61012d600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061032d565b604051808215151515815260200191505060405180910390f35b341561014f57fe5b6101576103d4565b005b341561016157fe5b61018d600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610468565b604051808381526020018281526020019250505060405180910390f35b34156101b257fe5b6101c8600480803590602001909190505061048c565b005b6101e060048080359060200190919050506106cd565b005b34156101ea57fe5b6101f2610841565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561023c57fe5b610244610867565b6040518082815260200191505060405180910390f35b341561026257fe5b61026a61086d565b6040518082815260200191505060405180910390f35b341561028857fe5b61029e6004808035906020019091905050610873565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156102e857fe5b6102f06108b3565b6040518082815260200191505060405180910390f35b60006001600a4381151561031657fe5b060190506103238161048c565b5b50565b60035481565b60006000600090505b6005805490508110156103c9578273ffffffffffffffffffffffffffffffffffffffff1660058281548110151561036957fe5b906000526020600020900160005b9054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1614156103bb57600191506103ce565b5b8080600101915050610336565b600091505b50919050565b600060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141561046557600060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16ff5b5b565b60066020528060005260406000206000915090508060000154908060010154905082565b6104946108b9565b6000600060006000600060009450600093505b6005805490508410156105ec576005848154811015156104c357fe5b906000526020600020900160005b9054906101000a900473ffffffffffffffffffffffffffffffffffffffff16925086600660008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010154141561058b5782868660648110151561054b57fe5b602002019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff168152505084806001019550505b600660008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006000820160009055600182016000905550505b83806001019450506104a7565b60006005816105fb91906108f8565b50606460025481151561060a57fe5b049150600090505b848110156106c357600073ffffffffffffffffffffffffffffffffffffffff16868260648110151561064057fe5b602002015173ffffffffffffffffffffffffffffffffffffffff161415156106b557858160648110151561067057fe5b602002015173ffffffffffffffffffffffffffffffffffffffff166108fc839081150290604051809050600060405180830381858888f1935050505015156106b457fe5b5b5b8080600101915050610612565b5b50505050505050565b6106d63361032d565b1515156106e35760006000fd5b600181101580156106f55750600a8111155b15156107015760006000fd5b60015434101515156107135760006000fd5b34600660003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000018190555080600660003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010181905550600360008154809291906001019190505550600580548060010182816107c79190610924565b916000526020600020900160005b33909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550503460026000828254019250508190555060045460035410151561083d5761083c610306565b5b5b50565b600060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60015481565b60045481565b60058181548110151561088257fe5b906000526020600020900160005b915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60025481565b610c80604051908101604052806064905b600073ffffffffffffffffffffffffffffffffffffffff168152602001906001900390816108ca5790505090565b81548183558181151161091f5781836000526020600020918201910161091e9190610950565b5b505050565b81548183558181151161094b5781836000526020600020918201910161094a9190610950565b5b505050565b61097291905b8082111561096e576000816000905550600101610956565b5090565b905600a165627a7a7230582050ba19f7367e003029c67288b48e9249990cd52751a860a051f2fc531f3d78de0029",
+  "deployedBytecode": "0x606060405236156100b8576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630a50e361146100c15780632ca8c6d3146100d35780634081d916146100f957806341c0e1b5146101475780634b114691146101595780636ca3fc3b146101aa5780637365870b146101ca5780638da5cb5b146101e2578063c38a8afd14610234578063e08a96cd1461025a578063f71d96cb14610280578063fe5e1853146102e0575b6100bf5b5b565b005b34156100c957fe5b6100d1610306565b005b34156100db57fe5b6100e3610327565b6040518082815260200191505060405180910390f35b341561010157fe5b61012d600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061032d565b604051808215151515815260200191505060405180910390f35b341561014f57fe5b6101576103d4565b005b341561016157fe5b61018d600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610468565b604051808381526020018281526020019250505060405180910390f35b34156101b257fe5b6101c8600480803590602001909190505061048c565b005b6101e060048080359060200190919050506106cd565b005b34156101ea57fe5b6101f2610841565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561023c57fe5b610244610867565b6040518082815260200191505060405180910390f35b341561026257fe5b61026a61086d565b6040518082815260200191505060405180910390f35b341561028857fe5b61029e6004808035906020019091905050610873565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156102e857fe5b6102f06108b3565b6040518082815260200191505060405180910390f35b60006001600a4381151561031657fe5b060190506103238161048c565b5b50565b60035481565b60006000600090505b6005805490508110156103c9578273ffffffffffffffffffffffffffffffffffffffff1660058281548110151561036957fe5b906000526020600020900160005b9054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1614156103bb57600191506103ce565b5b8080600101915050610336565b600091505b50919050565b600060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141561046557600060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16ff5b5b565b60066020528060005260406000206000915090508060000154908060010154905082565b6104946108b9565b6000600060006000600060009450600093505b6005805490508410156105ec576005848154811015156104c357fe5b906000526020600020900160005b9054906101000a900473ffffffffffffffffffffffffffffffffffffffff16925086600660008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010154141561058b5782868660648110151561054b57fe5b602002019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff168152505084806001019550505b600660008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006000820160009055600182016000905550505b83806001019450506104a7565b60006005816105fb91906108f8565b50606460025481151561060a57fe5b049150600090505b848110156106c357600073ffffffffffffffffffffffffffffffffffffffff16868260648110151561064057fe5b602002015173ffffffffffffffffffffffffffffffffffffffff161415156106b557858160648110151561067057fe5b602002015173ffffffffffffffffffffffffffffffffffffffff166108fc839081150290604051809050600060405180830381858888f1935050505015156106b457fe5b5b5b8080600101915050610612565b5b50505050505050565b6106d63361032d565b1515156106e35760006000fd5b600181101580156106f55750600a8111155b15156107015760006000fd5b60015434101515156107135760006000fd5b34600660003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000018190555080600660003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010181905550600360008154809291906001019190505550600580548060010182816107c79190610924565b916000526020600020900160005b33909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550503460026000828254019250508190555060045460035410151561083d5761083c610306565b5b5b50565b600060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60015481565b60045481565b60058181548110151561088257fe5b906000526020600020900160005b915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60025481565b610c80604051908101604052806064905b600073ffffffffffffffffffffffffffffffffffffffff168152602001906001900390816108ca5790505090565b81548183558181151161091f5781836000526020600020918201910161091e9190610950565b5b505050565b81548183558181151161094b5781836000526020600020918201910161094a9190610950565b5b505050565b61097291905b8082111561096e576000816000905550600101610956565b5090565b905600a165627a7a7230582050ba19f7367e003029c67288b48e9249990cd52751a860a051f2fc531f3d78de0029",
+  "sourceMap": "28:2213:0:-;;;206:3;173:36;;389:130;;;;;;;;;;;;;;;;;;;;;;;;;;;;;444:10;436:5;;:18;;;;;;;;;;;;;;;;;;483:1;468:11;:16;;465:46;;;500:11;487:10;:24;;;;465:46;389:130;;28:2213;;;;;;;",
+  "deployedSourceMap": "28:2213:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2208:28;;:::o;28:2213::-;;1340:149;;;;;;;;;;;;139:27;;;;;;;;;;;;;;;;;;;;;;;;;;;;;619:210;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;527:84;;;;;;;;;;;;336:44;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1496:704;;;;;;;;;;;;;;;;;;;;;;;;837:496;;;;;;;;;;;;;;;;;;50:20;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;77:25;;;;;;;;;;;;;;;;;;;;;;;;;;;;;173:36;;;;;;;;;;;;;;;;;;;;;;;;;;;;;216:24;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;109:23;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1340:149;1390:23;1436:1;1431:2;1416:12;:17;;;;;;;;:21;1390:47;;1449:33;1466:15;1449:16;:33::i;:::-;1340:149;;:::o;139:27::-;;;;:::o;619:210::-;686:4;704:9;716:1;704:13;;700:101;723:7;:14;;;;719:1;:18;700:101;;;772:6;758:20;;:7;766:1;758:10;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:20;;;755:36;;;787:4;780:11;;;;755:36;700:101;739:3;;;;;;;700:101;;;816:5;809:12;;619:210;;;;;:::o;527:84::-;577:5;;;;;;;;;;;563:19;;:10;:19;;;560:43;;;597:5;;;;;;;;;;;584:19;;;560:43;527:84;:::o;336:44::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;1496:704::-;1562:27;;:::i;:::-;1600:13;1633:9;1687:21;1986:25;2055:9;1616:1;1600:17;;1645:1;1633:13;;1629:317;1652:7;:14;;;;1648:1;:18;1629:317;;;1711:7;1719:1;1711:10;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1687:34;;1783:12;1739:10;:25;1750:13;1739:25;;;;;;;;;;;;;;;:40;;;:56;1736:151;;;1832:13;1815:7;1823:5;1815:14;;;;;;;;;;;;:30;;;;;;;;;;;1864:7;;;;;;;1736:151;1908:10;:25;1919:13;1908:25;;;;;;;;;;;;;;;;1901:32;;;;;;;;;;;;;;1629:317;1668:3;;;;;;;1629:317;;;1973:1;1956:7;:18;;;;;:::i;:::-;;2025:14;2014:8;;:25;;;;;;;;1986:53;;2067:1;2055:13;;2051:142;2074:5;2070:1;:9;2051:142;;;2125:1;2103:24;;:7;2111:1;2103:10;;;;;;;;;;;;;:24;;;;2100:81;;;2143:7;2151:1;2143:10;;;;;;;;;;;;;:19;;:38;2163:17;2143:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2100:81;2051:142;2081:3;;;;;;;2051:142;;;1496:704;;;;;;;;:::o;837:496::-;909:29;927:10;909:17;:29::i;:::-;908:30;900:39;;;;;;;;976:1;958:14;:19;;:43;;;;;999:2;981:14;:20;;958:43;950:52;;;;;;;;1034:10;;1021:9;:23;;1013:32;;;;;;;;1091:9;1056:10;:22;1067:10;1056:22;;;;;;;;;;;;;;;:32;;:44;;;;1151:14;1111:10;:22;1122:10;1111:22;;;;;;;;;;;;;;;:37;;:54;;;;1176:12;;:14;;;;;;;;;;;;;1201:7;:24;;;;;;;;;;;:::i;:::-;;;;;;;;;;;1214:10;1201:24;;;;;;;;;;;;;;;;;;;;;;;1248:9;1236:8;;:21;;;;;;;;;;;1287:15;;1271:12;;:31;;1268:58;;;1304:22;:20;:22::i;:::-;1268:58;837:496;;:::o;50:20::-;;;;;;;;;;;;;:::o;77:25::-;;;;:::o;173:36::-;;;;:::o;216:24::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;109:23::-;;;;:::o;28:2213::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.11;\r\n\r\ncontract Casino{\r\n    address public owner;\r\n    uint256 public minimumBet;\r\n    uint256 public totalBet;\r\n    uint256 public numberOfBets;\r\n    uint256 public maxAmountOfBets = 100;\r\n    address[] public players;\r\n\r\n    struct Player {\r\n      uint256 amountBet;\r\n      uint256 numberSelected;\r\n    }\r\n\r\n    mapping(address => Player) public playerInfo;\r\n\r\n    function Casino(uint256 _minimumBet){\r\n        owner = msg.sender;\r\n        if(_minimumBet != 0 ) minimumBet = _minimumBet;\r\n    }\r\n\r\n    function kill() public{\r\n        if(msg.sender == owner) selfdestruct(owner);\r\n    }\r\n\r\n    function checkPlayerExists(address player) public constant returns(bool){\r\n      for(uint256 i = 0; i < players.length; i++){\r\n         if(players[i] == player) return true;\r\n      }\r\n      return false;\r\n    }\r\n\r\n    function bet(uint256 numberSelected) public payable {\r\n        require(!checkPlayerExists(msg.sender));\r\n        require(numberSelected >= 1 && numberSelected <= 10);\r\n        require(msg.value >= minimumBet);\r\n        playerInfo[msg.sender].amountBet = msg.value;\r\n        playerInfo[msg.sender].numberSelected = numberSelected;\r\n        numberOfBets++;\r\n        players.push(msg.sender);\r\n        totalBet += msg.value;\r\n        if(numberOfBets >= maxAmountOfBets) generateNumberWinner();\r\n   }\r\n\r\n   function generateNumberWinner() public {\r\n        uint256 numberGenerated = block.number % 10 + 1; \r\n        distributePrizes(numberGenerated);\r\n   }\r\n\r\n   function distributePrizes(uint256 numberWinner) public {\r\n        address[100] memory winners;\r\n        uint256 count = 0; \r\n        for(uint256 i = 0; i < players.length; i++){\r\n            address playerAddress = players[i];\r\n            if(playerInfo[playerAddress].numberSelected == numberWinner){\r\n                winners[count] = playerAddress;\r\n                count++;\r\n            }\r\n            delete playerInfo[playerAddress]; \r\n        }\r\n        players.length = 0; \r\n        uint256 winnerEtherAmount = totalBet / winners.length; \r\n        for(uint256 j = 0; j < count; j++){\r\n            if(winners[j] != address(0)) \r\n            winners[j].transfer(winnerEtherAmount);\r\n        }\r\n    }\r\n\r\n    function() public payable {}\r\n\r\n}",
+  "sourcePath": "C:\\Users\\DeDE\\Desktop\\Projects\\casino-etherum\\contracts\\Casino.sol",
+  "legacyAST": {
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".11"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "0:24:0"
+      },
+      {
+        "attributes": {
+          "fullyImplemented": true,
+          "isLibrary": false,
+          "linearizedBaseContracts": [
+            276
+          ],
+          "name": "Casino"
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "owner",
+              "storageLocation": "default",
+              "type": "address",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address"
+                },
+                "id": 2,
+                "name": "ElementaryTypeName",
+                "src": "50:7:0"
+              }
+            ],
+            "id": 3,
+            "name": "VariableDeclaration",
+            "src": "50:20:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "minimumBet",
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256"
+                },
+                "id": 4,
+                "name": "ElementaryTypeName",
+                "src": "77:7:0"
+              }
+            ],
+            "id": 5,
+            "name": "VariableDeclaration",
+            "src": "77:25:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "totalBet",
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256"
+                },
+                "id": 6,
+                "name": "ElementaryTypeName",
+                "src": "109:7:0"
+              }
+            ],
+            "id": 7,
+            "name": "VariableDeclaration",
+            "src": "109:23:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "numberOfBets",
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256"
+                },
+                "id": 8,
+                "name": "ElementaryTypeName",
+                "src": "139:7:0"
+              }
+            ],
+            "id": 9,
+            "name": "VariableDeclaration",
+            "src": "139:27:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "maxAmountOfBets",
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256"
+                },
+                "id": 10,
+                "name": "ElementaryTypeName",
+                "src": "173:7:0"
+              },
+              {
+                "attributes": {
+                  "hexvalue": "313030",
+                  "subdenomination": null,
+                  "token": null,
+                  "type": "int_const 100",
+                  "value": "100"
+                },
+                "id": 11,
+                "name": "Literal",
+                "src": "206:3:0"
+              }
+            ],
+            "id": 12,
+            "name": "VariableDeclaration",
+            "src": "173:36:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "players",
+              "storageLocation": "default",
+              "type": "address[] storage ref",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address"
+                    },
+                    "id": 13,
+                    "name": "ElementaryTypeName",
+                    "src": "216:7:0"
+                  }
+                ],
+                "id": 14,
+                "name": "ArrayTypeName",
+                "src": "216:9:0"
+              }
+            ],
+            "id": 15,
+            "name": "VariableDeclaration",
+            "src": "216:24:0"
+          },
+          {
+            "attributes": {
+              "name": "Player"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "amountBet",
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256"
+                    },
+                    "id": 16,
+                    "name": "ElementaryTypeName",
+                    "src": "272:7:0"
+                  }
+                ],
+                "id": 17,
+                "name": "VariableDeclaration",
+                "src": "272:17:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "numberSelected",
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256"
+                    },
+                    "id": 18,
+                    "name": "ElementaryTypeName",
+                    "src": "298:7:0"
+                  }
+                ],
+                "id": 19,
+                "name": "VariableDeclaration",
+                "src": "298:22:0"
+              }
+            ],
+            "id": 20,
+            "name": "StructDefinition",
+            "src": "249:79:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "playerInfo",
+              "storageLocation": "default",
+              "type": "mapping(address => struct Casino.Player storage ref)",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address"
+                    },
+                    "id": 21,
+                    "name": "ElementaryTypeName",
+                    "src": "344:7:0"
+                  },
+                  {
+                    "attributes": {
+                      "name": "Player"
+                    },
+                    "id": 22,
+                    "name": "UserDefinedTypeName",
+                    "src": "355:6:0"
+                  }
+                ],
+                "id": 23,
+                "name": "Mapping",
+                "src": "336:26:0"
+              }
+            ],
+            "id": 24,
+            "name": "VariableDeclaration",
+            "src": "336:44:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "Casino",
+              "payable": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_minimumBet",
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256"
+                        },
+                        "id": 25,
+                        "name": "ElementaryTypeName",
+                        "src": "405:7:0"
+                      }
+                    ],
+                    "id": 26,
+                    "name": "VariableDeclaration",
+                    "src": "405:19:0"
+                  }
+                ],
+                "id": 27,
+                "name": "ParameterList",
+                "src": "404:21:0"
+              },
+              {
+                "children": [],
+                "id": 28,
+                "name": "ParameterList",
+                "src": "425:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "operator": "=",
+                          "type": "address"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "type": "address",
+                              "value": "owner"
+                            },
+                            "id": 29,
+                            "name": "Identifier",
+                            "src": "436:5:0"
+                          },
+                          {
+                            "attributes": {
+                              "member_name": "sender",
+                              "type": "address"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "type": "msg",
+                                  "value": "msg"
+                                },
+                                "id": 30,
+                                "name": "Identifier",
+                                "src": "444:3:0"
+                              }
+                            ],
+                            "id": 31,
+                            "name": "MemberAccess",
+                            "src": "444:10:0"
+                          }
+                        ],
+                        "id": 32,
+                        "name": "Assignment",
+                        "src": "436:18:0"
+                      }
+                    ],
+                    "id": 33,
+                    "name": "ExpressionStatement",
+                    "src": "436:18:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "operator": "!=",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "type": "uint256",
+                              "value": "_minimumBet"
+                            },
+                            "id": 34,
+                            "name": "Identifier",
+                            "src": "468:11:0"
+                          },
+                          {
+                            "attributes": {
+                              "hexvalue": "30",
+                              "subdenomination": null,
+                              "token": null,
+                              "type": "int_const 0",
+                              "value": "0"
+                            },
+                            "id": 35,
+                            "name": "Literal",
+                            "src": "483:1:0"
+                          }
+                        ],
+                        "id": 36,
+                        "name": "BinaryOperation",
+                        "src": "468:16:0"
+                      },
+                      {
+                        "children": [
+                          {
+                            "attributes": {
+                              "operator": "=",
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "type": "uint256",
+                                  "value": "minimumBet"
+                                },
+                                "id": 37,
+                                "name": "Identifier",
+                                "src": "487:10:0"
+                              },
+                              {
+                                "attributes": {
+                                  "type": "uint256",
+                                  "value": "_minimumBet"
+                                },
+                                "id": 38,
+                                "name": "Identifier",
+                                "src": "500:11:0"
+                              }
+                            ],
+                            "id": 39,
+                            "name": "Assignment",
+                            "src": "487:24:0"
+                          }
+                        ],
+                        "id": 40,
+                        "name": "ExpressionStatement",
+                        "src": "487:24:0"
+                      }
+                    ],
+                    "id": 41,
+                    "name": "IfStatement",
+                    "src": "465:46:0"
+                  }
+                ],
+                "id": 42,
+                "name": "Block",
+                "src": "425:94:0"
+              }
+            ],
+            "id": 43,
+            "name": "FunctionDefinition",
+            "src": "389:130:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "kill",
+              "payable": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [],
+                "id": 44,
+                "name": "ParameterList",
+                "src": "540:2:0"
+              },
+              {
+                "children": [],
+                "id": 45,
+                "name": "ParameterList",
+                "src": "549:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "operator": "==",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "member_name": "sender",
+                              "type": "address"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "type": "msg",
+                                  "value": "msg"
+                                },
+                                "id": 46,
+                                "name": "Identifier",
+                                "src": "563:3:0"
+                              }
+                            ],
+                            "id": 47,
+                            "name": "MemberAccess",
+                            "src": "563:10:0"
+                          },
+                          {
+                            "attributes": {
+                              "type": "address",
+                              "value": "owner"
+                            },
+                            "id": 48,
+                            "name": "Identifier",
+                            "src": "577:5:0"
+                          }
+                        ],
+                        "id": 49,
+                        "name": "BinaryOperation",
+                        "src": "563:19:0"
+                      },
+                      {
+                        "children": [
+                          {
+                            "attributes": {
+                              "type": "tuple()",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "type": "function (address)",
+                                  "value": "selfdestruct"
+                                },
+                                "id": 50,
+                                "name": "Identifier",
+                                "src": "584:12:0"
+                              },
+                              {
+                                "attributes": {
+                                  "type": "address",
+                                  "value": "owner"
+                                },
+                                "id": 51,
+                                "name": "Identifier",
+                                "src": "597:5:0"
+                              }
+                            ],
+                            "id": 52,
+                            "name": "FunctionCall",
+                            "src": "584:19:0"
+                          }
+                        ],
+                        "id": 53,
+                        "name": "ExpressionStatement",
+                        "src": "584:19:0"
+                      }
+                    ],
+                    "id": 54,
+                    "name": "IfStatement",
+                    "src": "560:43:0"
+                  }
+                ],
+                "id": 55,
+                "name": "Block",
+                "src": "549:62:0"
+              }
+            ],
+            "id": 56,
+            "name": "FunctionDefinition",
+            "src": "527:84:0"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "checkPlayerExists",
+              "payable": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "player",
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address"
+                        },
+                        "id": 57,
+                        "name": "ElementaryTypeName",
+                        "src": "646:7:0"
+                      }
+                    ],
+                    "id": 58,
+                    "name": "VariableDeclaration",
+                    "src": "646:14:0"
+                  }
+                ],
+                "id": 59,
+                "name": "ParameterList",
+                "src": "645:16:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool"
+                        },
+                        "id": 60,
+                        "name": "ElementaryTypeName",
+                        "src": "686:4:0"
+                      }
+                    ],
+                    "id": 61,
+                    "name": "VariableDeclaration",
+                    "src": "686:4:0"
+                  }
+                ],
+                "id": 62,
+                "name": "ParameterList",
+                "src": "685:6:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "attributes": {
+                              "constant": false,
+                              "name": "i",
+                              "storageLocation": "default",
+                              "type": "uint256",
+                              "visibility": "internal"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "name": "uint256"
+                                },
+                                "id": 63,
+                                "name": "ElementaryTypeName",
+                                "src": "704:7:0"
+                              }
+                            ],
+                            "id": 64,
+                            "name": "VariableDeclaration",
+                            "src": "704:9:0"
+                          },
+                          {
+                            "attributes": {
+                              "hexvalue": "30",
+                              "subdenomination": null,
+                              "token": null,
+                              "type": "int_const 0",
+                              "value": "0"
+                            },
+                            "id": 65,
+                            "name": "Literal",
+                            "src": "716:1:0"
+                          }
+                        ],
+                        "id": 66,
+                        "name": "VariableDeclarationStatement",
+                        "src": "704:13:0"
+                      },
+                      {
+                        "attributes": {
+                          "operator": "<",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "type": "uint256",
+                              "value": "i"
+                            },
+                            "id": 67,
+                            "name": "Identifier",
+                            "src": "719:1:0"
+                          },
+                          {
+                            "attributes": {
+                              "member_name": "length",
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "type": "address[] storage ref",
+                                  "value": "players"
+                                },
+                                "id": 68,
+                                "name": "Identifier",
+                                "src": "723:7:0"
+                              }
+                            ],
+                            "id": 69,
+                            "name": "MemberAccess",
+                            "src": "723:14:0"
+                          }
+                        ],
+                        "id": 70,
+                        "name": "BinaryOperation",
+                        "src": "719:18:0"
+                      },
+                      {
+                        "children": [
+                          {
+                            "attributes": {
+                              "operator": "++",
+                              "prefix": false,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "type": "uint256",
+                                  "value": "i"
+                                },
+                                "id": 71,
+                                "name": "Identifier",
+                                "src": "739:1:0"
+                              }
+                            ],
+                            "id": 72,
+                            "name": "UnaryOperation",
+                            "src": "739:3:0"
+                          }
+                        ],
+                        "id": 73,
+                        "name": "ExpressionStatement",
+                        "src": "739:3:0"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "attributes": {
+                                  "operator": "==",
+                                  "type": "bool"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "type": "address"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "type": "address[] storage ref",
+                                          "value": "players"
+                                        },
+                                        "id": 74,
+                                        "name": "Identifier",
+                                        "src": "758:7:0"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "type": "uint256",
+                                          "value": "i"
+                                        },
+                                        "id": 75,
+                                        "name": "Identifier",
+                                        "src": "766:1:0"
+                                      }
+                                    ],
+                                    "id": 76,
+                                    "name": "IndexAccess",
+                                    "src": "758:10:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "type": "address",
+                                      "value": "player"
+                                    },
+                                    "id": 77,
+                                    "name": "Identifier",
+                                    "src": "772:6:0"
+                                  }
+                                ],
+                                "id": 78,
+                                "name": "BinaryOperation",
+                                "src": "758:20:0"
+                              },
+                              {
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "hexvalue": "74727565",
+                                      "subdenomination": null,
+                                      "token": "true",
+                                      "type": "bool",
+                                      "value": "true"
+                                    },
+                                    "id": 79,
+                                    "name": "Literal",
+                                    "src": "787:4:0"
+                                  }
+                                ],
+                                "id": 80,
+                                "name": "Return",
+                                "src": "780:11:0"
+                              }
+                            ],
+                            "id": 81,
+                            "name": "IfStatement",
+                            "src": "755:36:0"
+                          }
+                        ],
+                        "id": 82,
+                        "name": "Block",
+                        "src": "743:58:0"
+                      }
+                    ],
+                    "id": 83,
+                    "name": "ForStatement",
+                    "src": "700:101:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "hexvalue": "66616c7365",
+                          "subdenomination": null,
+                          "token": "false",
+                          "type": "bool",
+                          "value": "false"
+                        },
+                        "id": 84,
+                        "name": "Literal",
+                        "src": "816:5:0"
+                      }
+                    ],
+                    "id": 85,
+                    "name": "Return",
+                    "src": "809:12:0"
+                  }
+                ],
+                "id": 86,
+                "name": "Block",
+                "src": "691:138:0"
+              }
+            ],
+            "id": 87,
+            "name": "FunctionDefinition",
+            "src": "619:210:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "bet",
+              "payable": true,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "numberSelected",
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256"
+                        },
+                        "id": 88,
+                        "name": "ElementaryTypeName",
+                        "src": "850:7:0"
+                      }
+                    ],
+                    "id": 89,
+                    "name": "VariableDeclaration",
+                    "src": "850:22:0"
+                  }
+                ],
+                "id": 90,
+                "name": "ParameterList",
+                "src": "849:24:0"
+              },
+              {
+                "children": [],
+                "id": 91,
+                "name": "ParameterList",
+                "src": "889:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "type": "function (bool)",
+                              "value": "require"
+                            },
+                            "id": 92,
+                            "name": "Identifier",
+                            "src": "900:7:0"
+                          },
+                          {
+                            "attributes": {
+                              "operator": "!",
+                              "prefix": true,
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "type": "bool",
+                                  "type_conversion": false
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "type": "function (address) constant returns (bool)",
+                                      "value": "checkPlayerExists"
+                                    },
+                                    "id": 93,
+                                    "name": "Identifier",
+                                    "src": "909:17:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "member_name": "sender",
+                                      "type": "address"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "type": "msg",
+                                          "value": "msg"
+                                        },
+                                        "id": 94,
+                                        "name": "Identifier",
+                                        "src": "927:3:0"
+                                      }
+                                    ],
+                                    "id": 95,
+                                    "name": "MemberAccess",
+                                    "src": "927:10:0"
+                                  }
+                                ],
+                                "id": 96,
+                                "name": "FunctionCall",
+                                "src": "909:29:0"
+                              }
+                            ],
+                            "id": 97,
+                            "name": "UnaryOperation",
+                            "src": "908:30:0"
+                          }
+                        ],
+                        "id": 98,
+                        "name": "FunctionCall",
+                        "src": "900:39:0"
+                      }
+                    ],
+                    "id": 99,
+                    "name": "ExpressionStatement",
+                    "src": "900:39:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "type": "function (bool)",
+                              "value": "require"
+                            },
+                            "id": 100,
+                            "name": "Identifier",
+                            "src": "950:7:0"
+                          },
+                          {
+                            "attributes": {
+                              "operator": "&&",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "operator": ">=",
+                                  "type": "bool"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "type": "uint256",
+                                      "value": "numberSelected"
+                                    },
+                                    "id": 101,
+                                    "name": "Identifier",
+                                    "src": "958:14:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "hexvalue": "31",
+                                      "subdenomination": null,
+                                      "token": null,
+                                      "type": "int_const 1",
+                                      "value": "1"
+                                    },
+                                    "id": 102,
+                                    "name": "Literal",
+                                    "src": "976:1:0"
+                                  }
+                                ],
+                                "id": 103,
+                                "name": "BinaryOperation",
+                                "src": "958:19:0"
+                              },
+                              {
+                                "attributes": {
+                                  "operator": "<=",
+                                  "type": "bool"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "type": "uint256",
+                                      "value": "numberSelected"
+                                    },
+                                    "id": 104,
+                                    "name": "Identifier",
+                                    "src": "981:14:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "hexvalue": "3130",
+                                      "subdenomination": null,
+                                      "token": null,
+                                      "type": "int_const 10",
+                                      "value": "10"
+                                    },
+                                    "id": 105,
+                                    "name": "Literal",
+                                    "src": "999:2:0"
+                                  }
+                                ],
+                                "id": 106,
+                                "name": "BinaryOperation",
+                                "src": "981:20:0"
+                              }
+                            ],
+                            "id": 107,
+                            "name": "BinaryOperation",
+                            "src": "958:43:0"
+                          }
+                        ],
+                        "id": 108,
+                        "name": "FunctionCall",
+                        "src": "950:52:0"
+                      }
+                    ],
+                    "id": 109,
+                    "name": "ExpressionStatement",
+                    "src": "950:52:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "type": "function (bool)",
+                              "value": "require"
+                            },
+                            "id": 110,
+                            "name": "Identifier",
+                            "src": "1013:7:0"
+                          },
+                          {
+                            "attributes": {
+                              "operator": ">=",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "member_name": "value",
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "type": "msg",
+                                      "value": "msg"
+                                    },
+                                    "id": 111,
+                                    "name": "Identifier",
+                                    "src": "1021:3:0"
+                                  }
+                                ],
+                                "id": 112,
+                                "name": "MemberAccess",
+                                "src": "1021:9:0"
+                              },
+                              {
+                                "attributes": {
+                                  "type": "uint256",
+                                  "value": "minimumBet"
+                                },
+                                "id": 113,
+                                "name": "Identifier",
+                                "src": "1034:10:0"
+                              }
+                            ],
+                            "id": 114,
+                            "name": "BinaryOperation",
+                            "src": "1021:23:0"
+                          }
+                        ],
+                        "id": 115,
+                        "name": "FunctionCall",
+                        "src": "1013:32:0"
+                      }
+                    ],
+                    "id": 116,
+                    "name": "ExpressionStatement",
+                    "src": "1013:32:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "member_name": "amountBet",
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "type": "struct Casino.Player storage ref"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "type": "mapping(address => struct Casino.Player storage ref)",
+                                      "value": "playerInfo"
+                                    },
+                                    "id": 117,
+                                    "name": "Identifier",
+                                    "src": "1056:10:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "member_name": "sender",
+                                      "type": "address"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "type": "msg",
+                                          "value": "msg"
+                                        },
+                                        "id": 118,
+                                        "name": "Identifier",
+                                        "src": "1067:3:0"
+                                      }
+                                    ],
+                                    "id": 119,
+                                    "name": "MemberAccess",
+                                    "src": "1067:10:0"
+                                  }
+                                ],
+                                "id": 120,
+                                "name": "IndexAccess",
+                                "src": "1056:22:0"
+                              }
+                            ],
+                            "id": 121,
+                            "name": "MemberAccess",
+                            "src": "1056:32:0"
+                          },
+                          {
+                            "attributes": {
+                              "member_name": "value",
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "type": "msg",
+                                  "value": "msg"
+                                },
+                                "id": 122,
+                                "name": "Identifier",
+                                "src": "1091:3:0"
+                              }
+                            ],
+                            "id": 123,
+                            "name": "MemberAccess",
+                            "src": "1091:9:0"
+                          }
+                        ],
+                        "id": 124,
+                        "name": "Assignment",
+                        "src": "1056:44:0"
+                      }
+                    ],
+                    "id": 125,
+                    "name": "ExpressionStatement",
+                    "src": "1056:44:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "member_name": "numberSelected",
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "type": "struct Casino.Player storage ref"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "type": "mapping(address => struct Casino.Player storage ref)",
+                                      "value": "playerInfo"
+                                    },
+                                    "id": 126,
+                                    "name": "Identifier",
+                                    "src": "1111:10:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "member_name": "sender",
+                                      "type": "address"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "type": "msg",
+                                          "value": "msg"
+                                        },
+                                        "id": 127,
+                                        "name": "Identifier",
+                                        "src": "1122:3:0"
+                                      }
+                                    ],
+                                    "id": 128,
+                                    "name": "MemberAccess",
+                                    "src": "1122:10:0"
+                                  }
+                                ],
+                                "id": 129,
+                                "name": "IndexAccess",
+                                "src": "1111:22:0"
+                              }
+                            ],
+                            "id": 130,
+                            "name": "MemberAccess",
+                            "src": "1111:37:0"
+                          },
+                          {
+                            "attributes": {
+                              "type": "uint256",
+                              "value": "numberSelected"
+                            },
+                            "id": 131,
+                            "name": "Identifier",
+                            "src": "1151:14:0"
+                          }
+                        ],
+                        "id": 132,
+                        "name": "Assignment",
+                        "src": "1111:54:0"
+                      }
+                    ],
+                    "id": 133,
+                    "name": "ExpressionStatement",
+                    "src": "1111:54:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "operator": "++",
+                          "prefix": false,
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "type": "uint256",
+                              "value": "numberOfBets"
+                            },
+                            "id": 134,
+                            "name": "Identifier",
+                            "src": "1176:12:0"
+                          }
+                        ],
+                        "id": 135,
+                        "name": "UnaryOperation",
+                        "src": "1176:14:0"
+                      }
+                    ],
+                    "id": 136,
+                    "name": "ExpressionStatement",
+                    "src": "1176:14:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "type": "uint256",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "member_name": "push",
+                              "type": "function (address) returns (uint256)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "type": "address[] storage ref",
+                                  "value": "players"
+                                },
+                                "id": 137,
+                                "name": "Identifier",
+                                "src": "1201:7:0"
+                              }
+                            ],
+                            "id": 139,
+                            "name": "MemberAccess",
+                            "src": "1201:12:0"
+                          },
+                          {
+                            "attributes": {
+                              "member_name": "sender",
+                              "type": "address"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "type": "msg",
+                                  "value": "msg"
+                                },
+                                "id": 140,
+                                "name": "Identifier",
+                                "src": "1214:3:0"
+                              }
+                            ],
+                            "id": 141,
+                            "name": "MemberAccess",
+                            "src": "1214:10:0"
+                          }
+                        ],
+                        "id": 142,
+                        "name": "FunctionCall",
+                        "src": "1201:24:0"
+                      }
+                    ],
+                    "id": 143,
+                    "name": "ExpressionStatement",
+                    "src": "1201:24:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "operator": "+=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "type": "uint256",
+                              "value": "totalBet"
+                            },
+                            "id": 144,
+                            "name": "Identifier",
+                            "src": "1236:8:0"
+                          },
+                          {
+                            "attributes": {
+                              "member_name": "value",
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "type": "msg",
+                                  "value": "msg"
+                                },
+                                "id": 145,
+                                "name": "Identifier",
+                                "src": "1248:3:0"
+                              }
+                            ],
+                            "id": 146,
+                            "name": "MemberAccess",
+                            "src": "1248:9:0"
+                          }
+                        ],
+                        "id": 147,
+                        "name": "Assignment",
+                        "src": "1236:21:0"
+                      }
+                    ],
+                    "id": 148,
+                    "name": "ExpressionStatement",
+                    "src": "1236:21:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "operator": ">=",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "type": "uint256",
+                              "value": "numberOfBets"
+                            },
+                            "id": 149,
+                            "name": "Identifier",
+                            "src": "1271:12:0"
+                          },
+                          {
+                            "attributes": {
+                              "type": "uint256",
+                              "value": "maxAmountOfBets"
+                            },
+                            "id": 150,
+                            "name": "Identifier",
+                            "src": "1287:15:0"
+                          }
+                        ],
+                        "id": 151,
+                        "name": "BinaryOperation",
+                        "src": "1271:31:0"
+                      },
+                      {
+                        "children": [
+                          {
+                            "attributes": {
+                              "type": "tuple()",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "type": "function ()",
+                                  "value": "generateNumberWinner"
+                                },
+                                "id": 152,
+                                "name": "Identifier",
+                                "src": "1304:20:0"
+                              }
+                            ],
+                            "id": 153,
+                            "name": "FunctionCall",
+                            "src": "1304:22:0"
+                          }
+                        ],
+                        "id": 154,
+                        "name": "ExpressionStatement",
+                        "src": "1304:22:0"
+                      }
+                    ],
+                    "id": 155,
+                    "name": "IfStatement",
+                    "src": "1268:58:0"
+                  }
+                ],
+                "id": 156,
+                "name": "Block",
+                "src": "889:444:0"
+              }
+            ],
+            "id": 157,
+            "name": "FunctionDefinition",
+            "src": "837:496:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "generateNumberWinner",
+              "payable": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [],
+                "id": 158,
+                "name": "ParameterList",
+                "src": "1369:2:0"
+              },
+              {
+                "children": [],
+                "id": 159,
+                "name": "ParameterList",
+                "src": "1379:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "name": "numberGenerated",
+                          "storageLocation": "default",
+                          "type": "uint256",
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "uint256"
+                            },
+                            "id": 160,
+                            "name": "ElementaryTypeName",
+                            "src": "1390:7:0"
+                          }
+                        ],
+                        "id": 161,
+                        "name": "VariableDeclaration",
+                        "src": "1390:23:0"
+                      },
+                      {
+                        "attributes": {
+                          "operator": "+",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "operator": "%",
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "member_name": "number",
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "type": "block",
+                                      "value": "block"
+                                    },
+                                    "id": 162,
+                                    "name": "Identifier",
+                                    "src": "1416:5:0"
+                                  }
+                                ],
+                                "id": 163,
+                                "name": "MemberAccess",
+                                "src": "1416:12:0"
+                              },
+                              {
+                                "attributes": {
+                                  "hexvalue": "3130",
+                                  "subdenomination": null,
+                                  "token": null,
+                                  "type": "int_const 10",
+                                  "value": "10"
+                                },
+                                "id": 164,
+                                "name": "Literal",
+                                "src": "1431:2:0"
+                              }
+                            ],
+                            "id": 165,
+                            "name": "BinaryOperation",
+                            "src": "1416:17:0"
+                          },
+                          {
+                            "attributes": {
+                              "hexvalue": "31",
+                              "subdenomination": null,
+                              "token": null,
+                              "type": "int_const 1",
+                              "value": "1"
+                            },
+                            "id": 166,
+                            "name": "Literal",
+                            "src": "1436:1:0"
+                          }
+                        ],
+                        "id": 167,
+                        "name": "BinaryOperation",
+                        "src": "1416:21:0"
+                      }
+                    ],
+                    "id": 168,
+                    "name": "VariableDeclarationStatement",
+                    "src": "1390:47:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "type": "function (uint256)",
+                              "value": "distributePrizes"
+                            },
+                            "id": 169,
+                            "name": "Identifier",
+                            "src": "1449:16:0"
+                          },
+                          {
+                            "attributes": {
+                              "type": "uint256",
+                              "value": "numberGenerated"
+                            },
+                            "id": 170,
+                            "name": "Identifier",
+                            "src": "1466:15:0"
+                          }
+                        ],
+                        "id": 171,
+                        "name": "FunctionCall",
+                        "src": "1449:33:0"
+                      }
+                    ],
+                    "id": 172,
+                    "name": "ExpressionStatement",
+                    "src": "1449:33:0"
+                  }
+                ],
+                "id": 173,
+                "name": "Block",
+                "src": "1379:110:0"
+              }
+            ],
+            "id": 174,
+            "name": "FunctionDefinition",
+            "src": "1340:149:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "distributePrizes",
+              "payable": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "numberWinner",
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256"
+                        },
+                        "id": 175,
+                        "name": "ElementaryTypeName",
+                        "src": "1522:7:0"
+                      }
+                    ],
+                    "id": 176,
+                    "name": "VariableDeclaration",
+                    "src": "1522:20:0"
+                  }
+                ],
+                "id": 177,
+                "name": "ParameterList",
+                "src": "1521:22:0"
+              },
+              {
+                "children": [],
+                "id": 178,
+                "name": "ParameterList",
+                "src": "1551:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "name": "winners",
+                          "storageLocation": "memory",
+                          "type": "address[100] memory",
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "attributes": {
+                                  "name": "address"
+                                },
+                                "id": 181,
+                                "name": "ElementaryTypeName",
+                                "src": "1562:7:0"
+                              },
+                              {
+                                "attributes": {
+                                  "hexvalue": "313030",
+                                  "subdenomination": null,
+                                  "token": null,
+                                  "type": "int_const 100",
+                                  "value": "100"
+                                },
+                                "id": 180,
+                                "name": "Literal",
+                                "src": "1570:3:0"
+                              }
+                            ],
+                            "id": 182,
+                            "name": "ArrayTypeName",
+                            "src": "1562:12:0"
+                          }
+                        ],
+                        "id": 183,
+                        "name": "VariableDeclaration",
+                        "src": "1562:27:0"
+                      }
+                    ],
+                    "id": 184,
+                    "name": "VariableDeclarationStatement",
+                    "src": "1562:12:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "name": "count",
+                          "storageLocation": "default",
+                          "type": "uint256",
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "uint256"
+                            },
+                            "id": 185,
+                            "name": "ElementaryTypeName",
+                            "src": "1600:7:0"
+                          }
+                        ],
+                        "id": 186,
+                        "name": "VariableDeclaration",
+                        "src": "1600:13:0"
+                      },
+                      {
+                        "attributes": {
+                          "hexvalue": "30",
+                          "subdenomination": null,
+                          "token": null,
+                          "type": "int_const 0",
+                          "value": "0"
+                        },
+                        "id": 187,
+                        "name": "Literal",
+                        "src": "1616:1:0"
+                      }
+                    ],
+                    "id": 188,
+                    "name": "VariableDeclarationStatement",
+                    "src": "1600:17:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "attributes": {
+                              "constant": false,
+                              "name": "i",
+                              "storageLocation": "default",
+                              "type": "uint256",
+                              "visibility": "internal"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "name": "uint256"
+                                },
+                                "id": 189,
+                                "name": "ElementaryTypeName",
+                                "src": "1633:7:0"
+                              }
+                            ],
+                            "id": 190,
+                            "name": "VariableDeclaration",
+                            "src": "1633:9:0"
+                          },
+                          {
+                            "attributes": {
+                              "hexvalue": "30",
+                              "subdenomination": null,
+                              "token": null,
+                              "type": "int_const 0",
+                              "value": "0"
+                            },
+                            "id": 191,
+                            "name": "Literal",
+                            "src": "1645:1:0"
+                          }
+                        ],
+                        "id": 192,
+                        "name": "VariableDeclarationStatement",
+                        "src": "1633:13:0"
+                      },
+                      {
+                        "attributes": {
+                          "operator": "<",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "type": "uint256",
+                              "value": "i"
+                            },
+                            "id": 193,
+                            "name": "Identifier",
+                            "src": "1648:1:0"
+                          },
+                          {
+                            "attributes": {
+                              "member_name": "length",
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "type": "address[] storage ref",
+                                  "value": "players"
+                                },
+                                "id": 194,
+                                "name": "Identifier",
+                                "src": "1652:7:0"
+                              }
+                            ],
+                            "id": 195,
+                            "name": "MemberAccess",
+                            "src": "1652:14:0"
+                          }
+                        ],
+                        "id": 196,
+                        "name": "BinaryOperation",
+                        "src": "1648:18:0"
+                      },
+                      {
+                        "children": [
+                          {
+                            "attributes": {
+                              "operator": "++",
+                              "prefix": false,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "type": "uint256",
+                                  "value": "i"
+                                },
+                                "id": 197,
+                                "name": "Identifier",
+                                "src": "1668:1:0"
+                              }
+                            ],
+                            "id": 198,
+                            "name": "UnaryOperation",
+                            "src": "1668:3:0"
+                          }
+                        ],
+                        "id": 199,
+                        "name": "ExpressionStatement",
+                        "src": "1668:3:0"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "attributes": {
+                                  "constant": false,
+                                  "name": "playerAddress",
+                                  "storageLocation": "default",
+                                  "type": "address",
+                                  "visibility": "internal"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "name": "address"
+                                    },
+                                    "id": 200,
+                                    "name": "ElementaryTypeName",
+                                    "src": "1687:7:0"
+                                  }
+                                ],
+                                "id": 201,
+                                "name": "VariableDeclaration",
+                                "src": "1687:21:0"
+                              },
+                              {
+                                "attributes": {
+                                  "type": "address"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "type": "address[] storage ref",
+                                      "value": "players"
+                                    },
+                                    "id": 202,
+                                    "name": "Identifier",
+                                    "src": "1711:7:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "type": "uint256",
+                                      "value": "i"
+                                    },
+                                    "id": 203,
+                                    "name": "Identifier",
+                                    "src": "1719:1:0"
+                                  }
+                                ],
+                                "id": 204,
+                                "name": "IndexAccess",
+                                "src": "1711:10:0"
+                              }
+                            ],
+                            "id": 205,
+                            "name": "VariableDeclarationStatement",
+                            "src": "1687:34:0"
+                          },
+                          {
+                            "children": [
+                              {
+                                "attributes": {
+                                  "operator": "==",
+                                  "type": "bool"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "member_name": "numberSelected",
+                                      "type": "uint256"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "type": "struct Casino.Player storage ref"
+                                        },
+                                        "children": [
+                                          {
+                                            "attributes": {
+                                              "type": "mapping(address => struct Casino.Player storage ref)",
+                                              "value": "playerInfo"
+                                            },
+                                            "id": 206,
+                                            "name": "Identifier",
+                                            "src": "1739:10:0"
+                                          },
+                                          {
+                                            "attributes": {
+                                              "type": "address",
+                                              "value": "playerAddress"
+                                            },
+                                            "id": 207,
+                                            "name": "Identifier",
+                                            "src": "1750:13:0"
+                                          }
+                                        ],
+                                        "id": 208,
+                                        "name": "IndexAccess",
+                                        "src": "1739:25:0"
+                                      }
+                                    ],
+                                    "id": 209,
+                                    "name": "MemberAccess",
+                                    "src": "1739:40:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "type": "uint256",
+                                      "value": "numberWinner"
+                                    },
+                                    "id": 210,
+                                    "name": "Identifier",
+                                    "src": "1783:12:0"
+                                  }
+                                ],
+                                "id": 211,
+                                "name": "BinaryOperation",
+                                "src": "1739:56:0"
+                              },
+                              {
+                                "children": [
+                                  {
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "operator": "=",
+                                          "type": "address"
+                                        },
+                                        "children": [
+                                          {
+                                            "attributes": {
+                                              "type": "address"
+                                            },
+                                            "children": [
+                                              {
+                                                "attributes": {
+                                                  "type": "address[100] memory",
+                                                  "value": "winners"
+                                                },
+                                                "id": 212,
+                                                "name": "Identifier",
+                                                "src": "1815:7:0"
+                                              },
+                                              {
+                                                "attributes": {
+                                                  "type": "uint256",
+                                                  "value": "count"
+                                                },
+                                                "id": 213,
+                                                "name": "Identifier",
+                                                "src": "1823:5:0"
+                                              }
+                                            ],
+                                            "id": 214,
+                                            "name": "IndexAccess",
+                                            "src": "1815:14:0"
+                                          },
+                                          {
+                                            "attributes": {
+                                              "type": "address",
+                                              "value": "playerAddress"
+                                            },
+                                            "id": 215,
+                                            "name": "Identifier",
+                                            "src": "1832:13:0"
+                                          }
+                                        ],
+                                        "id": 216,
+                                        "name": "Assignment",
+                                        "src": "1815:30:0"
+                                      }
+                                    ],
+                                    "id": 217,
+                                    "name": "ExpressionStatement",
+                                    "src": "1815:30:0"
+                                  },
+                                  {
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "operator": "++",
+                                          "prefix": false,
+                                          "type": "uint256"
+                                        },
+                                        "children": [
+                                          {
+                                            "attributes": {
+                                              "type": "uint256",
+                                              "value": "count"
+                                            },
+                                            "id": 218,
+                                            "name": "Identifier",
+                                            "src": "1864:5:0"
+                                          }
+                                        ],
+                                        "id": 219,
+                                        "name": "UnaryOperation",
+                                        "src": "1864:7:0"
+                                      }
+                                    ],
+                                    "id": 220,
+                                    "name": "ExpressionStatement",
+                                    "src": "1864:7:0"
+                                  }
+                                ],
+                                "id": 221,
+                                "name": "Block",
+                                "src": "1796:91:0"
+                              }
+                            ],
+                            "id": 222,
+                            "name": "IfStatement",
+                            "src": "1736:151:0"
+                          },
+                          {
+                            "children": [
+                              {
+                                "attributes": {
+                                  "operator": "delete",
+                                  "prefix": true,
+                                  "type": "tuple()"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "type": "struct Casino.Player storage ref"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "type": "mapping(address => struct Casino.Player storage ref)",
+                                          "value": "playerInfo"
+                                        },
+                                        "id": 223,
+                                        "name": "Identifier",
+                                        "src": "1908:10:0"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "type": "address",
+                                          "value": "playerAddress"
+                                        },
+                                        "id": 224,
+                                        "name": "Identifier",
+                                        "src": "1919:13:0"
+                                      }
+                                    ],
+                                    "id": 225,
+                                    "name": "IndexAccess",
+                                    "src": "1908:25:0"
+                                  }
+                                ],
+                                "id": 226,
+                                "name": "UnaryOperation",
+                                "src": "1901:32:0"
+                              }
+                            ],
+                            "id": 227,
+                            "name": "ExpressionStatement",
+                            "src": "1901:32:0"
+                          }
+                        ],
+                        "id": 228,
+                        "name": "Block",
+                        "src": "1672:274:0"
+                      }
+                    ],
+                    "id": 229,
+                    "name": "ForStatement",
+                    "src": "1629:317:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "member_name": "length",
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "type": "address[] storage ref",
+                                  "value": "players"
+                                },
+                                "id": 230,
+                                "name": "Identifier",
+                                "src": "1956:7:0"
+                              }
+                            ],
+                            "id": 232,
+                            "name": "MemberAccess",
+                            "src": "1956:14:0"
+                          },
+                          {
+                            "attributes": {
+                              "hexvalue": "30",
+                              "subdenomination": null,
+                              "token": null,
+                              "type": "int_const 0",
+                              "value": "0"
+                            },
+                            "id": 233,
+                            "name": "Literal",
+                            "src": "1973:1:0"
+                          }
+                        ],
+                        "id": 234,
+                        "name": "Assignment",
+                        "src": "1956:18:0"
+                      }
+                    ],
+                    "id": 235,
+                    "name": "ExpressionStatement",
+                    "src": "1956:18:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "name": "winnerEtherAmount",
+                          "storageLocation": "default",
+                          "type": "uint256",
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "uint256"
+                            },
+                            "id": 236,
+                            "name": "ElementaryTypeName",
+                            "src": "1986:7:0"
+                          }
+                        ],
+                        "id": 237,
+                        "name": "VariableDeclaration",
+                        "src": "1986:25:0"
+                      },
+                      {
+                        "attributes": {
+                          "operator": "/",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "type": "uint256",
+                              "value": "totalBet"
+                            },
+                            "id": 238,
+                            "name": "Identifier",
+                            "src": "2014:8:0"
+                          },
+                          {
+                            "attributes": {
+                              "member_name": "length",
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "type": "address[100] memory",
+                                  "value": "winners"
+                                },
+                                "id": 239,
+                                "name": "Identifier",
+                                "src": "2025:7:0"
+                              }
+                            ],
+                            "id": 240,
+                            "name": "MemberAccess",
+                            "src": "2025:14:0"
+                          }
+                        ],
+                        "id": 241,
+                        "name": "BinaryOperation",
+                        "src": "2014:25:0"
+                      }
+                    ],
+                    "id": 242,
+                    "name": "VariableDeclarationStatement",
+                    "src": "1986:53:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "attributes": {
+                              "constant": false,
+                              "name": "j",
+                              "storageLocation": "default",
+                              "type": "uint256",
+                              "visibility": "internal"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "name": "uint256"
+                                },
+                                "id": 243,
+                                "name": "ElementaryTypeName",
+                                "src": "2055:7:0"
+                              }
+                            ],
+                            "id": 244,
+                            "name": "VariableDeclaration",
+                            "src": "2055:9:0"
+                          },
+                          {
+                            "attributes": {
+                              "hexvalue": "30",
+                              "subdenomination": null,
+                              "token": null,
+                              "type": "int_const 0",
+                              "value": "0"
+                            },
+                            "id": 245,
+                            "name": "Literal",
+                            "src": "2067:1:0"
+                          }
+                        ],
+                        "id": 246,
+                        "name": "VariableDeclarationStatement",
+                        "src": "2055:13:0"
+                      },
+                      {
+                        "attributes": {
+                          "operator": "<",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "type": "uint256",
+                              "value": "j"
+                            },
+                            "id": 247,
+                            "name": "Identifier",
+                            "src": "2070:1:0"
+                          },
+                          {
+                            "attributes": {
+                              "type": "uint256",
+                              "value": "count"
+                            },
+                            "id": 248,
+                            "name": "Identifier",
+                            "src": "2074:5:0"
+                          }
+                        ],
+                        "id": 249,
+                        "name": "BinaryOperation",
+                        "src": "2070:9:0"
+                      },
+                      {
+                        "children": [
+                          {
+                            "attributes": {
+                              "operator": "++",
+                              "prefix": false,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "type": "uint256",
+                                  "value": "j"
+                                },
+                                "id": 250,
+                                "name": "Identifier",
+                                "src": "2081:1:0"
+                              }
+                            ],
+                            "id": 251,
+                            "name": "UnaryOperation",
+                            "src": "2081:3:0"
+                          }
+                        ],
+                        "id": 252,
+                        "name": "ExpressionStatement",
+                        "src": "2081:3:0"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "attributes": {
+                                  "operator": "!=",
+                                  "type": "bool"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "type": "address"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "type": "address[100] memory",
+                                          "value": "winners"
+                                        },
+                                        "id": 253,
+                                        "name": "Identifier",
+                                        "src": "2103:7:0"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "type": "uint256",
+                                          "value": "j"
+                                        },
+                                        "id": 254,
+                                        "name": "Identifier",
+                                        "src": "2111:1:0"
+                                      }
+                                    ],
+                                    "id": 255,
+                                    "name": "IndexAccess",
+                                    "src": "2103:10:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "type": "address",
+                                      "type_conversion": true
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "type": "type(address)",
+                                          "value": "address"
+                                        },
+                                        "id": 256,
+                                        "name": "ElementaryTypeNameExpression",
+                                        "src": "2117:7:0"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "hexvalue": "30",
+                                          "subdenomination": null,
+                                          "token": null,
+                                          "type": "int_const 0",
+                                          "value": "0"
+                                        },
+                                        "id": 257,
+                                        "name": "Literal",
+                                        "src": "2125:1:0"
+                                      }
+                                    ],
+                                    "id": 258,
+                                    "name": "FunctionCall",
+                                    "src": "2117:10:0"
+                                  }
+                                ],
+                                "id": 259,
+                                "name": "BinaryOperation",
+                                "src": "2103:24:0"
+                              },
+                              {
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "type": "tuple()",
+                                      "type_conversion": false
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "member_name": "transfer",
+                                          "type": "function (uint256)"
+                                        },
+                                        "children": [
+                                          {
+                                            "attributes": {
+                                              "type": "address"
+                                            },
+                                            "children": [
+                                              {
+                                                "attributes": {
+                                                  "type": "address[100] memory",
+                                                  "value": "winners"
+                                                },
+                                                "id": 260,
+                                                "name": "Identifier",
+                                                "src": "2143:7:0"
+                                              },
+                                              {
+                                                "attributes": {
+                                                  "type": "uint256",
+                                                  "value": "j"
+                                                },
+                                                "id": 261,
+                                                "name": "Identifier",
+                                                "src": "2151:1:0"
+                                              }
+                                            ],
+                                            "id": 262,
+                                            "name": "IndexAccess",
+                                            "src": "2143:10:0"
+                                          }
+                                        ],
+                                        "id": 263,
+                                        "name": "MemberAccess",
+                                        "src": "2143:19:0"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "type": "uint256",
+                                          "value": "winnerEtherAmount"
+                                        },
+                                        "id": 264,
+                                        "name": "Identifier",
+                                        "src": "2163:17:0"
+                                      }
+                                    ],
+                                    "id": 265,
+                                    "name": "FunctionCall",
+                                    "src": "2143:38:0"
+                                  }
+                                ],
+                                "id": 266,
+                                "name": "ExpressionStatement",
+                                "src": "2143:38:0"
+                              }
+                            ],
+                            "id": 267,
+                            "name": "IfStatement",
+                            "src": "2100:81:0"
+                          }
+                        ],
+                        "id": 268,
+                        "name": "Block",
+                        "src": "2085:108:0"
+                      }
+                    ],
+                    "id": 269,
+                    "name": "ForStatement",
+                    "src": "2051:142:0"
+                  }
+                ],
+                "id": 270,
+                "name": "Block",
+                "src": "1551:649:0"
+              }
+            ],
+            "id": 271,
+            "name": "FunctionDefinition",
+            "src": "1496:704:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "",
+              "payable": true,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [],
+                "id": 272,
+                "name": "ParameterList",
+                "src": "2216:2:0"
+              },
+              {
+                "children": [],
+                "id": 273,
+                "name": "ParameterList",
+                "src": "2234:0:0"
+              },
+              {
+                "children": [],
+                "id": 274,
+                "name": "Block",
+                "src": "2234:2:0"
+              }
+            ],
+            "id": 275,
+            "name": "FunctionDefinition",
+            "src": "2208:28:0"
+          }
+        ],
+        "id": 276,
+        "name": "ContractDefinition",
+        "src": "28:2213:0"
+      }
+    ],
+    "name": "SourceUnit"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.11+commit.68ef5810.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.4",
+  "updatedAt": "2022-01-23T19:06:12.198Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
